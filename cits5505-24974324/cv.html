@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ======================================================
+       BASIC PAGE SETTINGS
+       ====================================================== -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Foundations Tutor | Personalised CV</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Scroll progress bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ======================================================
+       HEADER / HERO
+       ====================================================== -->
+  <header class="site-header cv-header" id="top">
+    <nav class="navbar">
+      <div class="logo-wrap">
+        <div class="logo-icon">W</div>
+        <div class="logo-text">
+          <span class="logo-title">Web Foundations Tutor</span>
+          <span class="logo-subtitle">CITS5505 Personalised CV Page</span>
+        </div>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="tutorial.html">Tutorial</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="reflection.html">AI Reflection</a></li>
+        <li><a href="cv.html" class="active">CV</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero cv-hero">
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <div class="hero-badges">
+          <span class="badge html-badge">Professional</span>
+          <span class="badge css-badge">Interactive</span>
+          <span class="badge js-badge">Dynamic</span>
+        </div>
+
+        <h1>Personalised curriculum vitae</h1>
+
+        <p class="hero-text">
+          This page presents my professional profile, technical strengths, selected projects,
+          publication details, and career interests. It also includes dynamic content loaded
+          from a local JSON file to demonstrate interactive web development skills.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#cv-profile" class="primary-btn">View Profile</a>
+          <a href="#references-section" class="secondary-btn">View References</a>
+        </div>
+      </div>
+
+      <div class="hero-side-card glass-card">
+        <h3>What this page includes</h3>
+        <ul>
+          <li>Professional biography and personal profile image</li>
+          <li>Real contact details, LinkedIn, and GitHub</li>
+          <li>Technical skills, projects, education, and strengths</li>
+          <li>Publication section and references</li>
+        </ul>
+
+        <p class="hero-mini-note">
+          This page is designed to look professional while still being easy to explain during a live demonstration.
+        </p>
+      </div>
+    </section>
+  </header>
+
+  <!-- ======================================================
+       MAIN CONTENT
+       ====================================================== -->
+  <main id="main-content">
+    <!-- ======================================================
+         PROFILE SECTION
+         ====================================================== -->
+    <section id="cv-profile" class="content-section track-section">
+      <div class="cv-profile-grid">
+        <div class="cv-photo-card">
+          <!-- Change the image file name only if your real file name is different -->
+          <img
+            src="images/chaitanya-photo.jpg"
+            alt="Portrait photo of Chaitanya Neerukattu"
+            class="cv-photo"
+          >
+
+          <button id="toggleContactBtn" class="primary-btn" type="button" aria-expanded="false" aria-controls="contactPlaceholderBox">
+            Show Contact Details
+          </button>
+
+          <div id="contactPlaceholderBox" class="contact-placeholder hidden" aria-live="polite">
+            <p><strong>Email:</strong> chaitanyaneerukattu07@gmail.com</p>
+            <p><strong>Phone:</strong> +61 401 208 704</p>
+            <p>
+              <strong>LinkedIn:</strong>
+              <a href="https://www.linkedin.com/in/chaitanya-neerukattu?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer">
+                Chaitanya Neerukattu
+              </a>
+            </p>
+            <p>
+              <strong>GitHub:</strong>
+              <a href="https://github.com/chaitanya3418" target="_blank" rel="noopener noreferrer">
+                github.com/chaitanya3418
+              </a>
+            </p>
+            <p><strong>References:</strong> Available on request</p>
+          </div>
+        </div>
+
+        <div class="cv-intro-card">
+          <div class="section-heading">
+            <span class="section-tag">Profile</span>
+            <h2>Chaitanya Neerukattu</h2>
+          </div>
+
+          <p>
+            I am a Master of Information Technology student at the University of Western Australia with a strong interest
+            in software development, data analysis, machine learning, and practical problem solving. I enjoy building
+            digital solutions that are clear, useful, and well structured, and I value work that combines technical
+            thinking with real-world impact. Over the course of my studies and project work, I have developed a solid
+            foundation in programming, analytical reasoning, and step-by-step technical troubleshooting. I am especially
+            motivated by opportunities where I can keep improving while contributing reliably to a team or project.
+          </p>
+
+          <p>
+            My technical experience includes Python, Java, JavaScript, SQL, HTML, CSS, GitHub, Jupyter Notebook,
+            Visual Studio Code, Microsoft Excel, and Google Sheets. I have also worked with Flask and Streamlit in
+            practical tasks that required both logic and interface design. Through university assignments and personal
+            projects, I have strengthened my understanding of data preprocessing, machine learning workflows, predictive
+            modelling, database fundamentals, structured coding, and front-end web development. I am comfortable learning
+            new tools when required and I actively refine my work through testing, debugging, and feedback.
+          </p>
+
+          <p>
+            A major strength I bring is the ability to approach technical work patiently and logically. When I work on a
+            project, I prefer to understand the requirement clearly, break it into smaller tasks, and then improve each part
+            until the final result is reliable and presentable. This approach has helped me in health-prediction projects,
+            research-oriented deep learning work on medical image data, interactive web development tasks, and structured
+            academic programming assignments. These experiences have taught me that a strong technical solution is not only
+            about getting output, but also about producing something that can be explained, maintained, and improved.
+          </p>
+
+          <p>
+            I also value communication, adaptability, and professionalism. Alongside my academic work, I have developed
+            experience interacting with different people, managing responsibilities, and staying dependable in practical
+            environments. This has strengthened my confidence in teamwork, stakeholder interaction, and independent learning.
+            I try to present information clearly, whether I am writing code comments, documenting project decisions, or
+            explaining a solution to someone else. I believe these habits are important because technical skills become more
+            valuable when they are supported by accountability and clear communication.
+          </p>
+
+          <p>
+            In addition to technical work, I understand the importance of reliability, time management, and professional
+            conduct. I aim to bring a steady work ethic to every environment, whether I am completing academic tasks,
+            supporting a team, or interacting with stakeholders and customers. I am comfortable taking initiative, but I
+            also value listening carefully, following requirements, and improving my work after feedback. These qualities
+            help me contribute in a way that is not only technically capable but also dependable and respectful.
+          </p>
+
+          <p>
+            Looking ahead, I want to continue growing in software, data, and applied technology roles where I can combine
+            programming ability, analytical thinking, and practical decision making. I am particularly interested in work
+            that uses technology to solve meaningful problems, improve processes, or support better outcomes for users and
+            organisations. My long-term goal is to keep building industry-ready skills while contributing to projects that
+            are both technically strong and genuinely useful.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         HIGHLIGHTS SECTION
+         ====================================================== -->
+    <section class="content-section">
+      <div class="section-heading">
+        <span class="section-tag css-tag">Highlights</span>
+        <h2>Quick professional snapshot</h2>
+      </div>
+
+      <div class="cv-metrics-grid">
+        <div class="metric-card">
+          <span class="metric-label">Core Technologies</span>
+          <strong class="metric-value" data-target="10">0</strong>
+        </div>
+
+        <div class="metric-card">
+          <span class="metric-label">Major Project Areas</span>
+          <strong class="metric-value" data-target="4">0</strong>
+        </div>
+
+        <div class="metric-card">
+          <span class="metric-label">Certifications</span>
+          <strong class="metric-value" data-target="4">0</strong>
+        </div>
+
+        <div class="metric-card">
+          <span class="metric-label">Professional Strengths</span>
+          <strong class="metric-value" data-target="6">0</strong>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         DYNAMIC CONTENT SECTION
+         ====================================================== -->
+    <section id="cv-dynamic" class="content-section track-section">
+      <div class="section-heading">
+        <span class="section-tag html-tag">Dynamic Content</span>
+        <h2>Skills, projects, and career interests</h2>
+      </div>
+
+      <p>
+        The cards below are loaded dynamically from a local JSON file using JavaScript. This shows
+        that the CV page is not only static content. It also demonstrates how page content can be
+        stored separately from HTML and then rendered dynamically when the page loads.
+      </p>
+
+      <div class="filter-row">
+        <button class="filter-btn active" data-filter="all" type="button">All</button>
+        <button class="filter-btn" data-filter="technical" type="button">Technical Skills</button>
+        <button class="filter-btn" data-filter="projects" type="button">Projects</button>
+        <button class="filter-btn" data-filter="career" type="button">Career Interests</button>
+      </div>
+
+      <div id="cvLoading" class="loading-box">
+        Loading profile data...
+      </div>
+
+      <div id="cvError" class="error-box hidden">
+        Unable to load the CV data file. Please check that Live Server is running.
+      </div>
+
+      <div id="cvCardGrid" class="cv-card-grid hidden"></div>
+    </section>
+
+    <!-- ======================================================
+         PROJECT EXPLANATIONS
+         ====================================================== -->
+    <section class="content-section">
+      <div class="section-heading">
+        <span class="section-tag js-tag">Project Explanations</span>
+        <h2>Selected projects and what they demonstrate</h2>
+      </div>
+
+      <div class="correction-grid">
+        <article class="correction-card">
+          <h3>Smart Attendance System</h3>
+          <p>
+            I built a facial-recognition attendance prototype intended for workplace and school use.
+            The goal of the project was to improve attendance tracking, record accuracy, and
+            operational efficiency. This project demonstrates practical problem solving, system
+            thinking, and interest in applying intelligent technology to real-world administrative tasks.
+          </p>
+        </article>
+
+        <article class="correction-card">
+          <h3>Health Prediction Projects</h3>
+          <p>
+            I developed machine learning projects for health-related prediction tasks, including
+            heart disease prediction, using Python, data preprocessing, and model development
+            workflows. These projects demonstrate applied machine learning knowledge, structured
+            experimentation, and the ability to work with data-driven prediction tasks.
+          </p>
+        </article>
+
+        <article class="correction-card">
+          <h3>Lung Disease Detection Research</h3>
+          <p>
+            I worked on a deep learning project using CT and X-ray image data for early lung disease
+            detection. This research-focused work demonstrates my interest in combining machine learning
+            with medical image analysis and shows experience with more advanced modelling beyond basic
+            classroom programming tasks.
+          </p>
+        </article>
+
+        <article class="correction-card">
+          <h3>Interactive Multi-Page Web Application</h3>
+          <p>
+            This current project demonstrates front-end web development skills through a tutorial page,
+            a quiz page, an AI reflection page, and this personalised CV page. It includes JSON-based
+            dynamic loading, local storage history, interactive demonstrations, result feedback, and a
+            consistent visual design across multiple pages.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         PUBLICATION AND CERTIFICATIONS
+         ====================================================== -->
+    <section class="content-section">
+      <div class="section-heading">
+        <span class="section-tag demo-tag">Publication and Certifications</span>
+        <h2>Research and recognised learning</h2>
+      </div>
+
+      <div class="reference-list">
+        <article class="reference-card">
+          <h3>Publication</h3>
+          <p>
+            <strong>Early Detection of Lung Disease Using Deep Learning Algorithms on Image Data</strong><br>
+            Published in <strong>IJRASET</strong>.
+          </p>
+          <p>
+            This publication demonstrates research involvement and the ability to contribute to
+            academic work related to deep learning and medical image analysis.
+          </p>
+        </article>
+
+        <article class="reference-card">
+          <h3>Relevant Certifications</h3>
+          <p>
+            AWS Academy Cloud Foundation<br>
+            IBM Data Analytics with Python<br>
+            NPTEL Deep Learning<br>
+            Web Development Workshop
+          </p>
+          <p>
+            These certifications reflect continued learning across cloud foundations, analytics,
+            deep learning, and web development.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         STRENGTHS SECTION
+         ====================================================== -->
+    <section class="content-section">
+      <div class="section-heading">
+        <span class="section-tag js-tag">Strengths</span>
+        <h2>Professional strengths and work values</h2>
+      </div>
+
+      <div class="correction-grid">
+        <article class="correction-card">
+          <h3>Communication and Teamwork</h3>
+          <p>
+            I value clear communication and productive teamwork. These skills are important for
+            explaining technical ideas, working on projects with others, and supporting practical outcomes.
+          </p>
+        </article>
+
+        <article class="correction-card">
+          <h3>Adaptability</h3>
+          <p>
+            I am comfortable learning new tools and technologies when a project requires them.
+            This has been important across programming, machine learning, and web development work.
+          </p>
+        </article>
+
+        <article class="correction-card">
+          <h3>Problem Solving</h3>
+          <p>
+            I approach technical issues step by step. When something breaks or does not meet the
+            requirement, I try to isolate the issue, test carefully, and improve the solution logically.
+          </p>
+        </article>
+
+        <article class="correction-card">
+          <h3>Independent Learning and Stakeholder Engagement</h3>
+          <p>
+            I have developed confidence in learning independently and engaging with different kinds of
+            people through both technical project work and customer-facing experience. This helps me work
+            responsibly and adapt in practical environments.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         EDUCATION / EXPERIENCE
+         ====================================================== -->
+    <section class="content-section track-section">
+      <div class="section-heading">
+        <span class="section-tag demo-tag">Details</span>
+        <h2>Education summary</h2>
+      </div>
+
+      <div class="accordion-group">
+        <details class="tip-box" open>
+          <summary>Current Education</summary>
+          <p>
+            <strong>The University of Western Australia</strong><br>
+            Master of Information Technology<br>
+            2025 - 2026
+          </p>
+        </details>
+
+        <details class="tip-box">
+          <summary>Previous Education</summary>
+          <p>
+            <strong>Malla Reddy University, Hyderabad</strong><br>
+            Bachelor of Technology in Computer Science Engineering (AI/ML)<br>
+            CGPA: 8.02<br>
+            Graduated May 2024
+          </p>
+        </details>
+
+        <details class="tip-box">
+          <summary>Technical Focus</summary>
+          <p>
+            My technical interests include programming, machine learning, predictive modelling,
+            data analysis, visualisation, database fundamentals, and interactive web development.
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         REFERENCES
+         ====================================================== -->
+    <section id="references-section" class="content-section track-section">
+      <div class="section-heading">
+        <span class="section-tag css-tag">References</span>
+        <h2>Sources used in preparing this page</h2>
+      </div>
+
+      <p>
+        This section is clearly marked to meet the assignment requirement. It includes sources used
+        for page content, web development guidance, and AI assistance.
+      </p>
+
+      <!-- References formatted to UWA referencing guidelines (APA 7th edition) -->
+      <div class="ref-card-grid">
+
+        <article class="ref-source-card">
+          <span class="ref-badge ref-badge-html">Web Documentation</span>
+          <h3>MDN — HTML</h3>
+          <p>Mozilla Developer Network. (n.d.). <em>HTML: HyperText Markup Language</em>. Retrieved April 2026, from <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener noreferrer">developer.mozilla.org</a></p>
+        </article>
+
+        <article class="ref-source-card">
+          <span class="ref-badge ref-badge-css">Web Documentation</span>
+          <h3>MDN — CSS</h3>
+          <p>Mozilla Developer Network. (n.d.). <em>CSS: Cascading Style Sheets</em>. Retrieved April 2026, from <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noopener noreferrer">developer.mozilla.org</a></p>
+        </article>
+
+        <article class="ref-source-card">
+          <span class="ref-badge ref-badge-js">Web Documentation</span>
+          <h3>MDN — JavaScript</h3>
+          <p>Mozilla Developer Network. (n.d.). <em>JavaScript guide</em>. Retrieved April 2026, from <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" target="_blank" rel="noopener noreferrer">developer.mozilla.org</a></p>
+        </article>
+
+        <article class="ref-source-card">
+          <span class="ref-badge ref-badge-js">Web Documentation</span>
+          <h3>MDN — Fetch API</h3>
+          <p>Mozilla Developer Network. (n.d.). <em>Fetch API</em>. Retrieved April 2026, from <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API" target="_blank" rel="noopener noreferrer">developer.mozilla.org</a></p>
+        </article>
+
+        <article class="ref-source-card">
+          <span class="ref-badge ref-badge-js">Web Documentation</span>
+          <h3>MDN — Web Storage API</h3>
+          <p>Mozilla Developer Network. (n.d.). <em>Web Storage API</em>. Retrieved April 2026, from <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API" target="_blank" rel="noopener noreferrer">developer.mozilla.org</a></p>
+        </article>
+
+        <article class="ref-source-card">
+          <span class="ref-badge ref-badge-api">Public API</span>
+          <h3>Advice Slip API</h3>
+          <p>Advice Slip JSON API. (n.d.). <em>Advice Slip API</em>. Retrieved April 2026, from <a href="https://api.adviceslip.com/" target="_blank" rel="noopener noreferrer">api.adviceslip.com</a></p>
+        </article>
+
+        <article class="ref-source-card">
+          <span class="ref-badge ref-badge-ai">AI Tool</span>
+          <h3>ChatGPT (GPT-4o)</h3>
+          <p>OpenAI. (2026). <em>ChatGPT (GPT-4o)</em> [Large language model]. Used for drafting, commenting, and refining code. All output was critically evaluated and manually edited. <a href="https://chat.openai.com" target="_blank" rel="noopener noreferrer">chat.openai.com</a></p>
+        </article>
+
+        <article class="ref-source-card">
+          <span class="ref-badge ref-badge-personal">Personal Document</span>
+          <h3>Personal CV &amp; Records</h3>
+          <p>Neerukattu, C. (2026). <em>Personal curriculum vitae and academic records</em> [Unpublished personal document]. University of Western Australia. Primary source for profile, education, and project details.</p>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="quiz-callout fancy-callout">
+      <div>
+        <h2>Project complete</h2>
+        <p>
+          This page completes the four-page web application by presenting a professional profile,
+          real contact information, project explanations, and a clear references section.
+        </p>
+      </div>
+      <a href="tutorial.html" class="primary-btn">Back to Tutorial</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Web Foundations Tutor</p>
+  </footer>
+
+  <div class="floating-actions">
+    <a href="#cv-profile" class="floating-link overview-link" data-target="cv-profile">Profile</a>
+    <a href="#cv-dynamic" class="floating-link html-link" data-target="cv-dynamic">Skills</a>
+    <a href="#references-section" class="floating-link css-link" data-target="references-section">References</a>
+    <a href="#top" class="floating-link top-link">Top</a>
+  </div>
+
+  <script src="js/cv.js"></script>
+</body>
+</html>

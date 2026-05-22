@@ -1,0 +1,274 @@
+{
+  "questions": [
+    {
+      "topic": "HTML",
+      "question": "What is the main purpose of HTML in a web page?",
+      "options": [
+        "To control visual design and layout",
+        "To add interactivity and logic",
+        "To structure and describe content",
+        "To store data in the browser"
+      ],
+      "answer": "To structure and describe content",
+      "explanation": "HTML is used to structure content and describe what each part of the page is, such as headings, paragraphs, links, images, and forms.",
+      "option_explanations": {
+        "To control visual design and layout": "This is mainly the job of CSS, which controls appearance and layout.",
+        "To add interactivity and logic": "This is mainly the job of JavaScript, which controls behaviour and events.",
+        "To structure and describe content": "This is correct because HTML gives the page its structure and meaning.",
+        "To store data in the browser": "This is not HTML’s purpose. Browser storage is usually handled with JavaScript features like localStorage."
+      }
+    },
+    {
+      "topic": "HTML",
+      "question": "Which HTML element is used for the largest page heading?",
+      "options": [
+        "<heading>",
+        "<h1>",
+        "<title>",
+        "<header>"
+      ],
+      "answer": "<h1>",
+      "explanation": "The <h1> element is used for the main heading of a page and is the highest heading level in HTML.",
+      "option_explanations": {
+        "<heading>": "This is not a valid standard HTML element.",
+        "<h1>": "This is correct because <h1> represents the main heading.",
+        "<title>": "The <title> element is placed in the head section and sets the browser tab title, not the visible page heading.",
+        "<header>": "The <header> element is a semantic container, not a heading level itself."
+      }
+    },
+    {
+      "topic": "HTML",
+      "question": "Which attribute is used in an anchor tag to define the destination link?",
+      "options": [
+        "src",
+        "href",
+        "alt",
+        "class"
+      ],
+      "answer": "href",
+      "explanation": "The href attribute stores the destination URL or file path for an anchor tag.",
+      "option_explanations": {
+        "src": "src is commonly used for resources such as images or scripts, not normal links.",
+        "href": "This is correct because href tells the browser where the link should go.",
+        "alt": "alt is used with images to provide alternative text.",
+        "class": "class is used for styling or selecting elements, not for link destinations."
+      }
+    },
+    {
+      "topic": "HTML",
+      "question": "Why is the alt attribute important in an image element?",
+      "options": [
+        "It changes the border color of the image",
+        "It adds animation to the image",
+        "It provides alternative text and improves accessibility",
+        "It makes the image larger"
+      ],
+      "answer": "It provides alternative text and improves accessibility",
+      "explanation": "The alt attribute gives a text description of the image, which is useful if the image cannot load or for assistive technologies like screen readers.",
+      "option_explanations": {
+        "It changes the border color of the image": "Border color is controlled with CSS, not the alt attribute.",
+        "It adds animation to the image": "Animation is not controlled by alt text.",
+        "It provides alternative text and improves accessibility": "This is correct because alt text helps users understand the image content.",
+        "It makes the image larger": "Image size is controlled by CSS or width/height attributes, not alt."
+      }
+    },
+    {
+      "topic": "HTML",
+      "question": "Which HTML element is most appropriate for a list of navigation links?",
+      "options": [
+        "<footer>",
+        "<nav>",
+        "<article>",
+        "<aside>"
+      ],
+      "answer": "<nav>",
+      "explanation": "The <nav> element is specifically intended for navigation links and menus.",
+      "option_explanations": {
+        "<footer>": "A footer is used for closing page content, not specifically for navigation.",
+        "<nav>": "This is correct because <nav> is the semantic element for navigation links.",
+        "<article>": "An article is used for standalone content such as a blog post or news item.",
+        "<aside>": "An aside is used for related but secondary content, not main navigation."
+      }
+    },
+    {
+      "topic": "CSS",
+      "question": "What is the main purpose of CSS?",
+      "options": [
+        "To structure content",
+        "To style and format content",
+        "To add event handling",
+        "To load JSON files"
+      ],
+      "answer": "To style and format content",
+      "explanation": "CSS is used to control the visual presentation of a page, including colors, fonts, spacing, layout, and responsiveness.",
+      "option_explanations": {
+        "To structure content": "Structure is mainly handled by HTML.",
+        "To style and format content": "This is correct because CSS controls presentation and visual design.",
+        "To add event handling": "Event handling is usually done with JavaScript.",
+        "To load JSON files": "Loading files is handled with JavaScript, not CSS."
+      }
+    },
+    {
+      "topic": "CSS",
+      "question": "In the rule 'p { color: blue; }', what is 'p'?",
+      "options": [
+        "A property",
+        "A selector",
+        "A value",
+        "A class"
+      ],
+      "answer": "A selector",
+      "explanation": "In CSS, the selector chooses which elements the rule applies to. In this case, all paragraph elements are targeted.",
+      "option_explanations": {
+        "A property": "The property here is color, not p.",
+        "A selector": "This is correct because p selects all paragraph elements.",
+        "A value": "The value here is blue, not p.",
+        "A class": "A class selector would normally start with a dot, such as .card."
+      }
+    },
+    {
+      "topic": "CSS",
+      "question": "Which CSS property changes the inside spacing of an element?",
+      "options": [
+        "margin",
+        "padding",
+        "border",
+        "display"
+      ],
+      "answer": "padding",
+      "explanation": "Padding controls the space inside an element, between the content and the border.",
+      "option_explanations": {
+        "margin": "Margin controls outside spacing, not inside spacing.",
+        "padding": "This is correct because padding changes the inner spacing.",
+        "border": "Border controls the visible line around an element, not spacing itself.",
+        "display": "Display changes layout behaviour, not inside spacing."
+      }
+    },
+    {
+      "topic": "CSS",
+      "question": "Which approach is usually best for styling multiple pages consistently?",
+      "options": [
+        "Inline CSS on every element",
+        "A separate external stylesheet",
+        "Writing all styles in JavaScript",
+        "Using only browser defaults"
+      ],
+      "answer": "A separate external stylesheet",
+      "explanation": "An external stylesheet allows styles to be reused and managed more easily across multiple pages.",
+      "option_explanations": {
+        "Inline CSS on every element": "This becomes repetitive and difficult to maintain.",
+        "A separate external stylesheet": "This is correct because it keeps styles reusable and organised.",
+        "Writing all styles in JavaScript": "This is possible in some cases, but it is not the normal or best approach for standard page styling.",
+        "Using only browser defaults": "This would not give a customised and polished design."
+      }
+    },
+    {
+      "topic": "CSS",
+      "question": "What does responsive design aim to do?",
+      "options": [
+        "Make pages load slower",
+        "Make pages adapt to different screen sizes",
+        "Remove all colors from the page",
+        "Replace HTML with CSS"
+      ],
+      "answer": "Make pages adapt to different screen sizes",
+      "explanation": "Responsive design helps webpages look and work well on desktops, tablets, and phones.",
+      "option_explanations": {
+        "Make pages load slower": "This is not the goal of responsive design.",
+        "Make pages adapt to different screen sizes": "This is correct because responsive design improves usability on different devices.",
+        "Remove all colors from the page": "Responsive design is about layout and usability, not removing colour.",
+        "Replace HTML with CSS": "CSS does not replace HTML; they work together."
+      }
+    },
+    {
+      "topic": "JavaScript",
+      "question": "What is JavaScript mainly used for in front-end web development?",
+      "options": [
+        "Defining semantic structure only",
+        "Styling page colors only",
+        "Adding interactivity and dynamic behavior",
+        "Replacing HTML headings"
+      ],
+      "answer": "Adding interactivity and dynamic behavior",
+      "explanation": "JavaScript is mainly used to make the page interactive by responding to user actions and updating content dynamically.",
+      "option_explanations": {
+        "Defining semantic structure only": "That is mainly the role of HTML.",
+        "Styling page colors only": "That is mainly the role of CSS.",
+        "Adding interactivity and dynamic behavior": "This is correct because JavaScript handles events, logic, and dynamic updates.",
+        "Replacing HTML headings": "JavaScript can change headings, but that is not its main purpose."
+      }
+    },
+    {
+      "topic": "JavaScript",
+      "question": "What does the DOM represent?",
+      "options": [
+        "A database manager",
+        "The browser’s model of the webpage structure",
+        "A CSS animation library",
+        "A type of image format"
+      ],
+      "answer": "The browser’s model of the webpage structure",
+      "explanation": "The DOM is the browser’s internal representation of the HTML document, which JavaScript can read and change.",
+      "option_explanations": {
+        "A database manager": "The DOM is not related to databases.",
+        "The browser’s model of the webpage structure": "This is correct because the DOM represents the page as objects in memory.",
+        "A CSS animation library": "The DOM is not a library.",
+        "A type of image format": "The DOM is not an image format."
+      }
+    },
+    {
+      "topic": "JavaScript",
+      "question": "Which function is commonly used to display debugging information in the browser console?",
+      "options": [
+        "print()",
+        "write()",
+        "console.log()",
+        "debug.text()"
+      ],
+      "answer": "console.log()",
+      "explanation": "console.log() is widely used to print values and messages into the browser console for debugging.",
+      "option_explanations": {
+        "print()": "This is not the standard browser debugging function for console output.",
+        "write()": "This is not the common console debugging method.",
+        "console.log()": "This is correct because it outputs debugging information to the console.",
+        "debug.text()": "This is not a standard JavaScript debugging function."
+      }
+    },
+    {
+      "topic": "JavaScript",
+      "question": "What is an event listener used for?",
+      "options": [
+        "To change CSS files into HTML",
+        "To wait for a user action and run code",
+        "To store files in local storage",
+        "To make images responsive"
+      ],
+      "answer": "To wait for a user action and run code",
+      "explanation": "An event listener listens for events such as clicks or input changes and then runs a function in response.",
+      "option_explanations": {
+        "To change CSS files into HTML": "Event listeners do not convert file types.",
+        "To wait for a user action and run code": "This is correct because event listeners react to events.",
+        "To store files in local storage": "Local storage is separate from event listeners.",
+        "To make images responsive": "Responsive images are handled with HTML/CSS, not event listeners."
+      }
+    },
+    {
+      "topic": "JavaScript",
+      "question": "Why is loading quiz questions from a JSON file useful in this project?",
+      "options": [
+        "Because it avoids using JavaScript",
+        "Because it allows the questions to be managed separately from the HTML",
+        "Because it removes the need for answers",
+        "Because it makes CSS optional"
+      ],
+      "answer": "Because it allows the questions to be managed separately from the HTML",
+      "explanation": "Using a JSON file keeps question data separate from the page structure and allows the quiz to be rendered dynamically with JavaScript.",
+      "option_explanations": {
+        "Because it avoids using JavaScript": "Loading JSON dynamically still uses JavaScript.",
+        "Because it allows the questions to be managed separately from the HTML": "This is correct because it keeps the data modular and easier to maintain.",
+        "Because it removes the need for answers": "The quiz still needs correct answers to calculate results.",
+        "Because it makes CSS optional": "CSS is unrelated to whether JSON is used."
+      }
+    }
+  ]
+}

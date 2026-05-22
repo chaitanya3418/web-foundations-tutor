@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ======================================================
+       BASIC PAGE SETTINGS
+       ====================================================== -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Foundations Tutor | Quiz</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Scroll progress bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ======================================================
+       HEADER / HERO
+       ====================================================== -->
+  <header class="site-header quiz-header" id="top">
+    <nav class="navbar">
+      <div class="logo-wrap">
+        <div class="logo-icon">W</div>
+        <div class="logo-text">
+          <span class="logo-title">Web Foundations Tutor</span>
+          <span class="logo-subtitle">CITS5505 Quiz Page</span>
+        </div>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="tutorial.html">Tutorial</a></li>
+        <li><a href="quiz.html" class="active">Quiz</a></li>
+        <li><a href="reflection.html">AI Reflection</a></li>
+        <li><a href="cv.html">CV</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero quiz-hero">
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <div class="hero-badges">
+          <span class="badge html-badge">Dynamic</span>
+          <span class="badge css-badge">Feedback</span>
+          <span class="badge js-badge">Reward</span>
+        </div>
+
+        <h1>Test your HTML, CSS, and JavaScript knowledge</h1>
+
+        <p class="hero-text">
+          This quiz loads questions from JSON, randomises them, checks answers automatically,
+          saves attempt history, gives detailed feedback, and shows a reward if you pass.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#quiz-start" class="primary-btn">Start Quiz</a>
+          <a href="#attempt-history" class="secondary-btn">View Attempts</a>
+        </div>
+      </div>
+
+      <div class="hero-side-card glass-card">
+        <h3>Quiz features</h3>
+        <ul>
+          <li>Questions loaded dynamically from JSON</li>
+          <li>Random order every time the page loads</li>
+          <li>Automatic scoring and pass/fail result</li>
+          <li>Detailed answer explanations after submission</li>
+          <li>Attempt history saved with local storage</li>
+        </ul>
+
+        <p class="hero-mini-note">
+          Once you choose at least one answer, the page will warn you before leaving.
+        </p>
+      </div>
+    </section>
+  </header>
+
+  <!-- ======================================================
+       MAIN CONTENT
+       ====================================================== -->
+  <main id="main-content">
+    <!-- Quiz intro -->
+    <section id="quiz-start" class="content-section track-section">
+      <div class="section-heading">
+        <span class="section-tag js-tag">Quiz Instructions</span>
+        <h2>How this quiz works</h2>
+      </div>
+
+      <p>
+        This quiz demonstrates multiple JavaScript concepts. The questions are stored separately
+        in a JSON file, which means they are not hard-coded into the HTML page. JavaScript loads
+        them dynamically, randomises the order, renders the options, and then checks the user’s
+        answers when the form is submitted.
+      </p>
+
+      <p>
+        After submitting, the page calculates the score, percentage, and pass/fail result.
+        It also explains each question so the quiz becomes a learning tool, not just a scoring tool.
+        Each attempt is saved in local storage so progress can be tracked over time.
+      </p>
+
+      <div class="info-grid">
+        <article class="info-card">
+          <h3>Loaded with AJAX</h3>
+          <p>Questions are fetched from a separate JSON file using JavaScript.</p>
+        </article>
+
+        <article class="info-card">
+          <h3>Randomised</h3>
+          <p>The order changes every time the quiz loads, making it dynamic.</p>
+        </article>
+
+        <article class="info-card">
+          <h3>Explained</h3>
+          <p>After submission, each answer is explained so the user can learn from mistakes.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Status panel -->
+    <section class="content-section">
+      <div class="quiz-status-grid">
+        <div class="status-card">
+          <span class="status-label">Questions</span>
+          <strong id="questionCount">0</strong>
+        </div>
+
+        <div class="status-card">
+          <span class="status-label">Pass Mark</span>
+          <strong id="passMarkDisplay">70%</strong>
+        </div>
+
+        <div class="status-card">
+          <span class="status-label">Started?</span>
+          <strong id="startedStatus">No</strong>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dynamic quiz -->
+    <section class="content-section track-section">
+      <div class="section-heading">
+        <span class="section-tag">Quiz</span>
+        <h2>Answer all questions</h2>
+      </div>
+
+      <div id="quizLoading" class="loading-box" role="status" aria-live="polite">
+        Loading quiz questions...
+      </div>
+
+      <div id="quizError" class="error-box hidden" role="alert">
+        Unable to load the quiz questions. Please check that Live Server is running and try again.
+      </div>
+
+      <form id="quizForm" class="hidden" novalidate>
+        <div id="validationSummary" class="error-box hidden" role="alert" aria-live="assertive"></div>
+        <div id="quizContainer"></div>
+
+        <div class="quiz-submit-row">
+          <button type="submit" class="primary-btn">Submit Quiz</button>
+          <button type="button" id="clearSelectionsBtn" class="secondary-btn dark-btn">Clear Selections</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Result section -->
+    <section id="resultSection" class="content-section hidden track-section" aria-live="polite">
+      <div class="section-heading">
+        <span class="section-tag demo-tag">Results</span>
+        <h2>Your latest result</h2>
+      </div>
+
+      <div class="result-hero-card" id="resultHeroCard">
+        <div class="result-visual" id="resultVisual">🎯</div>
+        <div class="result-hero-text">
+          <h3 id="resultHeading">Quiz submitted</h3>
+          <p id="quoteText" class="quote-text">Let’s see how you did.</p>
+        </div>
+      </div>
+
+      <div class="result-grid">
+        <div class="result-card">
+          <span class="result-label">Score</span>
+          <strong id="scoreValue">0 / 0</strong>
+        </div>
+
+        <div class="result-card">
+          <span class="result-label">Percentage</span>
+          <strong id="percentageValue">0%</strong>
+        </div>
+
+        <div class="result-card">
+          <span class="result-label">Status</span>
+          <strong id="passFailValue">Not graded</strong>
+        </div>
+      </div>
+
+      <div id="resultMessage" class="result-message" role="status" aria-live="polite"></div>
+
+      <!-- Reward content from public API -->
+      <div id="rewardSection" class="reward-card hidden" aria-live="polite">
+        <div class="reward-card-header">
+          <div class="reward-icon" aria-hidden="true">🎁</div>
+          <div>
+            <h3>Reward unlocked</h3>
+            <p class="reward-subtitle">Your bonus message is loaded from a public API.</p>
+          </div>
+        </div>
+        <p id="rewardText">Loading reward...</p>
+      </div>
+    </section>
+
+    <!-- Review section -->
+    <section id="reviewSection" class="content-section hidden">
+      <div class="section-heading">
+        <span class="section-tag html-tag">Answer Review</span>
+        <h2>Explanation for each question</h2>
+      </div>
+
+      <p>
+        This section explains the correct answer for each question and briefly shows why the other
+        options are not correct. This helps the quiz work as a learning tool, not just a test.
+      </p>
+
+      <div id="reviewList"></div>
+    </section>
+
+    <!-- Attempt history -->
+    <section id="attempt-history" class="content-section">
+      <div class="section-heading">
+        <span class="section-tag css-tag">History</span>
+        <h2>Your previous attempts</h2>
+      </div>
+
+      <p>
+        Each attempt is saved in local storage with the score, percentage, result, and date/time.
+        This allows the user to track progress over time.
+      </p>
+
+      <div class="history-actions">
+        <button type="button" id="clearHistoryBtn" class="secondary-btn dark-btn">Clear Saved History</button>
+      </div>
+
+      <div id="historyEmpty" class="loading-box">
+        No attempts saved yet.
+      </div>
+
+      <div id="historyStatus" class="loading-box hidden" role="status" aria-live="polite"></div>
+      <div id="attemptHistoryList" class="attempt-list hidden"></div>
+    </section>
+
+    <section class="quiz-callout fancy-callout">
+      <div>
+        <h2>Need a refresher first?</h2>
+        <p>
+          Go back to the tutorial page to review HTML, CSS, and JavaScript before trying again.
+        </p>
+      </div>
+      <a href="tutorial.html" class="primary-btn">Back to Tutorial</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Web Foundations Tutor</p>
+  </footer>
+
+  <div class="floating-actions">
+    <a href="#quiz-start" class="floating-link overview-link" data-target="quiz-start">Intro</a>
+    <a href="#quizContainer" class="floating-link html-link" data-target="quiz-start">Questions</a>
+    <a href="#resultSection" class="floating-link demo-link" data-target="resultSection">Result</a>
+    <a href="#reviewSection" class="floating-link js-link" data-target="reviewSection">Review</a>
+    <a href="#attempt-history" class="floating-link css-link" data-target="attempt-history">History</a>
+    <a href="#top" class="floating-link top-link">Top</a>
+  </div>
+
+  <script src="js/quiz.js"></script>
+</body>
+</html>

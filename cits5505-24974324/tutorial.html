@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ======================================================
+       BASIC PAGE SETTINGS
+       ====================================================== -->
+
+  <!-- Character encoding so symbols/text display properly -->
+  <meta charset="UTF-8">
+
+  <!-- Makes the layout responsive on phones/tablets -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Text shown in the browser tab -->
+  <title>Web Foundations Tutor | Tutorial</title>
+
+  <!-- External CSS file -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ======================================================
+       SCROLL PROGRESS BAR
+       This thin bar fills as the user scrolls down.
+       JavaScript updates its width.
+       ====================================================== -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ======================================================
+       HEADER / HERO SECTION
+       The top area of the page with the title, intro, GIF,
+       and quick action buttons.
+       ====================================================== -->
+  <header class="site-header" id="top">
+    <!-- Navigation bar -->
+    <nav class="navbar">
+      <!-- Branding / logo -->
+      <div class="logo-wrap">
+        <div class="logo-icon">W</div>
+        <div class="logo-text">
+          <span class="logo-title">Web Foundations Tutor</span>
+          <span class="logo-subtitle">CITS5505 Tutorial Page</span>
+        </div>
+      </div>
+
+      <!-- Main page navigation -->
+      <ul class="nav-links">
+        <li><a href="tutorial.html" class="active">Tutorial</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="reflection.html">AI Reflection</a></li>
+        <li><a href="cv.html">CV</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero section -->
+    <section class="hero">
+      <!-- Decorative overlay above background -->
+      <div class="hero-overlay"></div>
+
+      <!-- Left hero content -->
+      <div class="hero-content">
+        <!-- Quick topic pills -->
+        <div class="hero-badges">
+          <a href="#html-section" class="badge badge-link html-badge">HTML</a>
+          <a href="#css-section" class="badge badge-link css-badge">CSS</a>
+          <a href="#js-section" class="badge badge-link js-badge">JavaScript</a>
+        </div>
+
+        <!-- Main heading -->
+        <h1>Learn how modern web pages are built</h1>
+
+        <!-- Intro paragraph -->
+        <p class="hero-text">
+          HTML gives a web page structure and meaning. CSS controls the style and appearance.
+          JavaScript adds interactivity and dynamic behaviour. Together, these three technologies
+          form the foundation of front-end web development.
+        </p>
+
+        <!-- Main hero buttons -->
+        <div class="hero-actions">
+          <a href="#overview" class="primary-btn">Start Tutorial</a>
+          <a href="#interactive-lab" class="secondary-btn">Try Demo</a>
+        </div>
+      </div>
+
+      <!-- Right hero content -->
+      <div class="hero-side-card glass-card hero-media-card">
+        <!-- Animated GIF -->
+        <img
+          src="images/web-dev.gif"
+          alt="Animated illustration showing web development concepts"
+          class="hero-gif"
+        >
+
+        <h3>What this page teaches</h3>
+        <ul>
+          <li>HTML document structure and semantic tags</li>
+          <li>Links, images, lists, tables, and forms</li>
+          <li>CSS layout, styling, and presentation</li>
+          <li>JavaScript events, DOM updates, and interaction</li>
+        </ul>
+
+        <p class="hero-mini-note">
+          This tutorial is designed to teach and demonstrate, not just define terms.
+        </p>
+      </div>
+    </section>
+  </header>
+
+  <!-- ======================================================
+       MAIN CONTENT
+       ====================================================== -->
+  <main id="main-content">
+    <!-- ======================================================
+         OVERVIEW SECTION
+         The cards here link to the full explanation sections.
+         ====================================================== -->
+    <section id="overview" class="content-section track-section">
+      <div class="section-heading">
+        <span class="section-tag">Overview</span>
+        <h2>The three core web technologies</h2>
+      </div>
+
+      <p>
+        HTML describes the content and structure of a page. CSS controls its appearance,
+        including colours, spacing, and layout. JavaScript makes the page interactive by
+        reacting to user actions and changing content dynamically.
+      </p>
+
+      <!-- Clickable topic cards -->
+      <div class="topic-grid">
+        <a href="#html-section" class="topic-card topic-link-card html-card">
+          <div class="topic-icon">⌘</div>
+          <h3>HTML</h3>
+          <p>Defines headings, paragraphs, links, images, forms, sections, and page meaning.</p>
+        </a>
+
+        <a href="#css-section" class="topic-card topic-link-card css-card">
+          <div class="topic-icon">✦</div>
+          <h3>CSS</h3>
+          <p>Controls colours, layout, spacing, responsiveness, and visual identity.</p>
+        </a>
+
+        <a href="#js-section" class="topic-card topic-link-card js-card">
+          <div class="topic-icon">⚡</div>
+          <h3>JavaScript</h3>
+          <p>Handles events, updates the DOM, validates input, and adds interactivity.</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         HTML SECTION
+         Main explanation of HTML.
+         ====================================================== -->
+    <section id="html-section" class="content-section track-section">
+      <div class="section-heading">
+        <span class="section-tag html-tag">HTML</span>
+        <h2>HTML: Structure, meaning, and content</h2>
+      </div>
+
+      <p>
+        HTML stands for HyperText Markup Language. It is the language used to structure web
+        content. Instead of focusing on decoration, HTML focuses on meaning. For example,
+        a heading should use a heading element, a paragraph should use a paragraph element,
+        and navigation links should appear inside a navigation area.
+      </p>
+
+      <p>
+        A valid HTML5 document starts with <code>&lt;!DOCTYPE html&gt;</code>. The main root
+        element is <code>&lt;html&gt;</code>. Inside that, the <code>&lt;head&gt;</code>
+        contains metadata such as the page title, linked CSS files, and viewport settings,
+        while the <code>&lt;body&gt;</code> contains the visible content shown to the user.
+      </p>
+
+      <p>
+        HTML elements can also contain attributes. Attributes provide extra information about
+        an element. For example, an anchor uses <code>href</code> to store its destination,
+        an image uses <code>src</code> to define the file location, and an image should also
+        use <code>alt</code> text so users understand the image if it cannot be seen.
+      </p>
+
+      <p>
+        Good HTML matters because semantic structure improves accessibility, readability, and maintenance.
+        Screen readers rely on meaningful headings and landmark elements, search engines benefit from clear
+        document structure, and developers can understand and update the page more easily when the markup is
+        organised around meaning instead of visual tricks.
+      </p>
+
+      <!-- Highlight / key idea -->
+      <div class="highlight-box html-highlight">
+        <strong>Important HTML idea:</strong> HTML should describe the role and meaning of content,
+        not just the way it should look.
+      </div>
+
+      <!-- Small HTML concept cards -->
+      <div class="info-grid">
+        <article class="info-card">
+          <h3>Document Structure</h3>
+          <p>Use <code>&lt;!DOCTYPE html&gt;</code>, <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, and <code>&lt;body&gt;</code>.</p>
+        </article>
+
+        <article class="info-card">
+          <h3>Semantic Tags</h3>
+          <p>Use <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>, and <code>&lt;footer&gt;</code>.</p>
+        </article>
+
+        <article class="info-card">
+          <h3>Attributes</h3>
+          <p>Common attributes include <code>href</code>, <code>src</code>, <code>alt</code>, <code>id</code>, and <code>class</code>.</p>
+        </article>
+
+        <article class="info-card">
+          <h3>Links & Images</h3>
+          <p>Use <code>&lt;a&gt;</code> for hyperlinks and <code>&lt;img&gt;</code> for images with meaningful <code>alt</code> text.</p>
+        </article>
+
+        <article class="info-card">
+          <h3>Lists & Tables</h3>
+          <p>Use lists for grouped items and tables for tabular data rather than page layout.</p>
+        </article>
+
+        <article class="info-card">
+          <h3>Forms</h3>
+          <p>Use <code>&lt;form&gt;</code>, <code>&lt;label&gt;</code>, <code>&lt;input&gt;</code>, and validation attributes like <code>required</code>.</p>
+        </article>
+      </div>
+
+      <!-- Code examples -->
+      <div class="example-card">
+        <h3>HTML Example: Basic Page Structure</h3>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;title&gt;My Web Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;header&gt;
+    &lt;h1&gt;Web Foundations&lt;/h1&gt;
+  &lt;/header&gt;
+
+  &lt;main&gt;
+    &lt;section&gt;
+      &lt;p&gt;HTML gives content structure and meaning.&lt;/p&gt;
+    &lt;/section&gt;
+  &lt;/main&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+      </div>
+
+      <div class="example-card">
+        <h3>HTML Example: Links, Images, and Lists</h3>
+        <pre><code>&lt;nav&gt;
+  &lt;a href="quiz.html"&gt;Go to Quiz&lt;/a&gt;
+&lt;/nav&gt;
+
+&lt;img src="images/web-dev.gif" alt="Animated web development illustration"&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;HTML structures content&lt;/li&gt;
+  &lt;li&gt;CSS styles the page&lt;/li&gt;
+  &lt;li&gt;JavaScript adds behaviour&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+      </div>
+
+      <div class="example-card">
+        <h3>HTML Example: Form and Validation</h3>
+        <pre><code>&lt;form&gt;
+  &lt;label for="email"&gt;Email&lt;/label&gt;
+  &lt;input type="email" id="email" required&gt;
+
+  &lt;label for="age"&gt;Age&lt;/label&gt;
+  &lt;input type="number" id="age" min="18" max="100"&gt;
+
+  &lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+      </div>
+
+      <!-- Comparison table -->
+      <div class="compare-table-wrap">
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Good HTML Practice</th>
+              <th>Poor HTML Practice</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Page structure</td>
+              <td>Use semantic sections like <code>&lt;header&gt;</code> and <code>&lt;main&gt;</code></td>
+              <td>Use only generic <code>&lt;div&gt;</code> elements everywhere</td>
+            </tr>
+            <tr>
+              <td>Images</td>
+              <td>Add meaningful <code>alt</code> text</td>
+              <td>Leave out <code>alt</code> text</td>
+            </tr>
+            <tr>
+              <td>Forms</td>
+              <td>Match labels to inputs and use validation attributes</td>
+              <td>Use inputs without labels or validation</td>
+            </tr>
+            <tr>
+              <td>Links</td>
+              <td>Use clear link text like “Go to Quiz”</td>
+              <td>Use vague text like “Click here” everywhere</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Expandable help box -->
+      <details class="tip-box">
+        <summary>Why are labels and validation important?</summary>
+        <p>
+          Labels make forms clearer and easier to use, while native HTML validation can help
+          check values such as email format, ranges, and required fields before the form is submitted.
+        </p>
+      </details>
+
+      <!-- Learn More cards -->
+      <div class="learn-more-grid">
+        <a class="learn-card html-learn-card" href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics" target="_blank" rel="noopener noreferrer">
+          <div class="learn-card-top">
+            <span class="learn-icon">⌘</span>
+            <span class="learn-label">HTML</span>
+          </div>
+          <h3>MDN HTML Basics</h3>
+          <p>Beginner guide to tags, elements, attributes, images, lists, and links.</p>
+          <span class="learn-arrow">Learn more ↗</span>
+        </a>
+
+        <a class="learn-card html-learn-card" href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener noreferrer">
+          <div class="learn-card-top">
+            <span class="learn-icon">⌘</span>
+            <span class="learn-label">HTML</span>
+          </div>
+          <h3>MDN HTML Reference</h3>
+          <p>Reference for HTML elements such as headings, images, forms, and semantic tags.</p>
+          <span class="learn-arrow">Open reference ↗</span>
+        </a>
+
+        <a class="learn-card html-learn-card" href="https://validator.w3.org/" target="_blank" rel="noopener noreferrer">
+          <div class="learn-card-top">
+            <span class="learn-icon">✓</span>
+            <span class="learn-label">Validation</span>
+          </div>
+          <h3>W3C Markup Validator</h3>
+          <p>Useful for checking your HTML for markup issues before submission.</p>
+          <span class="learn-arrow">Validate markup ↗</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         INTERACTIVE HTML EXPLORER
+         ====================================================== -->
+    <section id="html-explorer" class="content-section">
+      <div class="section-heading">
+        <span class="section-tag html-tag">Interactive HTML Explorer</span>
+        <h2>Click a topic to learn HTML with examples</h2>
+      </div>
+
+      <p>
+        This section is interactive. Click the buttons below to switch between different HTML topics.
+      </p>
+
+      <div class="explorer-layout">
+        <div class="explorer-buttons">
+          <button class="explorer-btn active" data-topic="structure" type="button">Document Structure</button>
+          <button class="explorer-btn" data-topic="semantic" type="button">Semantic Elements</button>
+          <button class="explorer-btn" data-topic="links" type="button">Links and Images</button>
+          <button class="explorer-btn" data-topic="lists" type="button">Lists</button>
+          <button class="explorer-btn" data-topic="forms" type="button">Forms and Validation</button>
+        </div>
+
+        <div class="explorer-display">
+          <h3 id="explorerTitle">Document Structure</h3>
+          <p id="explorerText">
+            A basic HTML5 document begins with a doctype declaration, then uses html, head, and body.
+          </p>
+          <pre class="explorer-code"><code id="explorerCode"></code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         INTERACTIVE HTML BUILDER
+         ====================================================== -->
+    <section id="html-builder" class="content-section">
+      <div class="section-heading">
+        <span class="section-tag html-tag">Interactive Builder</span>
+        <h2>Build an HTML element live</h2>
+      </div>
+
+      <p>
+        This mini builder lets you choose an HTML tag, type some content, and instantly see both
+        the preview and the generated code. It helps show how HTML elements and attributes work.
+      </p>
+
+      <div class="builder-layout">
+        <div class="builder-controls panel-card">
+          <label for="builderTag">Choose a tag</label>
+          <select id="builderTag">
+            <option value="h1">Heading (h1)</option>
+            <option value="p">Paragraph (p)</option>
+            <option value="a">Link (a)</option>
+            <option value="button">Button</option>
+          </select>
+
+          <label for="builderText">Text content</label>
+          <input type="text" id="builderText" value="Learn HTML the smart way">
+
+          <div id="builderHrefRow">
+            <label for="builderHref">Link destination</label>
+            <input type="text" id="builderHref" value="quiz.html">
+          </div>
+
+          <button id="builderUpdateBtn" class="primary-btn" type="button">Generate Element</button>
+        </div>
+
+        <div class="builder-output panel-card">
+          <h3>Live Preview</h3>
+          <div class="builder-preview-box">
+            <div id="builderPreview"></div>
+          </div>
+
+          <h3>Generated Code</h3>
+          <pre class="explorer-code"><code id="builderCode"></code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         CSS SECTION
+         ====================================================== -->
+    <section id="css-section" class="content-section track-section">
+      <div class="section-heading">
+        <span class="section-tag css-tag">CSS</span>
+        <h2>CSS: Style and presentation</h2>
+      </div>
+
+      <p>
+        CSS stands for Cascading Style Sheets. It controls presentation, including colours,
+        spacing, borders, positioning, and responsive layout. A key principle is separating
+        content from presentation: HTML provides meaning, while CSS controls appearance.
+      </p>
+
+      <p>
+        CSS rules are made from selectors and declarations. A selector chooses which elements
+        to style, and the declarations define properties and values. External stylesheets are
+        very useful because one stylesheet can style multiple pages consistently.
+      </p>
+
+      <p>
+        Following CSS best practices improves maintainability. Reusable classes, consistent spacing,
+        and responsive layout rules help pages look professional across different screen sizes and make
+        later updates much easier than repeating inline styles throughout the HTML.
+      </p>
+
+      <div class="highlight-box css-highlight">
+        <strong>Important CSS idea:</strong> one stylesheet can keep multiple pages visually consistent.
+      </div>
+
+      <div class="example-card">
+        <h3>CSS Example: Styling a Page</h3>
+        <pre><code>body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f9fc;
+  color: #1f2937;
+}
+
+h1 {
+  color: #1f4e79;
+}
+
+.card {
+  padding: 1rem;
+  border-radius: 10px;
+}</code></pre>
+      </div>
+
+      <div class="example-card">
+        <h3>CSS Example: Linking an External Stylesheet</h3>
+        <pre><code>&lt;head&gt;
+  &lt;link rel="stylesheet" href="css/style.css"&gt;
+&lt;/head&gt;</code></pre>
+      </div>
+
+      <div class="learn-more-grid">
+        <a class="learn-card css-learn-card" href="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/Getting_started" target="_blank" rel="noopener noreferrer">
+          <div class="learn-card-top">
+            <span class="learn-icon">✦</span>
+            <span class="learn-label">CSS</span>
+          </div>
+          <h3>MDN Getting Started with CSS</h3>
+          <p>Beginner guide to applying CSS, using external stylesheets, and writing rules.</p>
+          <span class="learn-arrow">Start learning ↗</span>
+        </a>
+
+        <a class="learn-card css-learn-card" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Selectors" target="_blank" rel="noopener noreferrer">
+          <div class="learn-card-top">
+            <span class="learn-icon">✦</span>
+            <span class="learn-label">CSS</span>
+          </div>
+          <h3>MDN CSS Selectors</h3>
+          <p>Learn how selectors target the elements you want to style.</p>
+          <span class="learn-arrow">See selectors ↗</span>
+        </a>
+
+        <a class="learn-card css-learn-card" href="https://jigsaw.w3.org/css-validator/" target="_blank" rel="noopener noreferrer">
+          <div class="learn-card-top">
+            <span class="learn-icon">✓</span>
+            <span class="learn-label">Validation</span>
+          </div>
+          <h3>W3C CSS Validator</h3>
+          <p>Check your CSS for syntax problems and validation issues.</p>
+          <span class="learn-arrow">Validate CSS ↗</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         JAVASCRIPT SECTION
+         ====================================================== -->
+    <section id="js-section" class="content-section track-section">
+      <div class="section-heading">
+        <span class="section-tag js-tag">JavaScript</span>
+        <h2>JavaScript: Interactivity and behaviour</h2>
+      </div>
+
+      <p>
+        JavaScript runs in the browser and reacts to user actions such as clicks, typing,
+        scrolling, and form input. It can select parts of the page and update the document
+        without reloading the whole page.
+      </p>
+
+      <p>
+        This is often done through the DOM, which represents the page as a tree of objects.
+        JavaScript can use that model to change text, styles, classes, or even create new
+        elements while the page is running.
+      </p>
+
+      <p>
+        Good JavaScript is not only about making something happen. It should also be readable,
+        testable, and safe to extend. Clear function names, separated logic, and careful event handling
+        make debugging easier and reduce the chance of small mistakes breaking the whole page.
+      </p>
+
+      <div class="highlight-box js-highlight">
+        <strong>Important JavaScript idea:</strong> JavaScript is event-driven and can update the page instantly.
+      </div>
+
+      <div class="example-card">
+        <h3>JavaScript Example: Click Event</h3>
+        <pre><code>document.getElementById("demoBtn").addEventListener("click", function () {
+  document.getElementById("demoText").textContent =
+    "JavaScript updated this content.";
+});</code></pre>
+      </div>
+
+      <div class="example-card">
+        <h3>JavaScript Example: Console Debugging</h3>
+        <pre><code>console.log("Tutorial page loaded successfully");</code></pre>
+      </div>
+
+      <div class="learn-more-grid">
+        <a class="learn-card js-learn-card" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" target="_blank" rel="noopener noreferrer">
+          <div class="learn-card-top">
+            <span class="learn-icon">⚡</span>
+            <span class="learn-label">JavaScript</span>
+          </div>
+          <h3>MDN JavaScript Guide</h3>
+          <p>Guide to syntax, variables, functions, loops, objects, and more.</p>
+          <span class="learn-arrow">Read guide ↗</span>
+        </a>
+
+        <a class="learn-card js-learn-card" href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction" target="_blank" rel="noopener noreferrer">
+          <div class="learn-card-top">
+            <span class="learn-icon">⚡</span>
+            <span class="learn-label">DOM</span>
+          </div>
+          <h3>MDN DOM Introduction</h3>
+          <p>Learn how JavaScript reads and changes the page structure in memory.</p>
+          <span class="learn-arrow">Explore DOM ↗</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         STYLE PLAYGROUND / DEMO
+         ====================================================== -->
+    <section id="interactive-lab" class="content-section track-section">
+      <div class="section-heading">
+        <span class="section-tag demo-tag">Interactive Demo</span>
+        <h2>Live style playground</h2>
+      </div>
+
+      <p>
+        This demo combines HTML form controls, CSS styling, and JavaScript event handling.
+        Change the controls and see the preview update instantly.
+      </p>
+
+      <div class="demo-grid">
+        <div class="demo-controls panel-card">
+          <label for="demoHeading">Preview heading</label>
+          <input type="text" id="demoHeading" value="My Styled Card">
+
+          <label for="demoColor">Theme color</label>
+          <select id="demoColor">
+            <option value="#2563eb">Ocean Blue</option>
+            <option value="#7c3aed">Purple Glow</option>
+            <option value="#0f766e">Teal Mint</option>
+            <option value="#ea580c">Warm Orange</option>
+          </select>
+
+          <label for="demoSize">Font size: <span id="sizeValue">24px</span></label>
+          <input type="range" id="demoSize" min="18" max="40" value="24">
+
+          <div class="demo-button-row">
+            <button id="applyDemoBtn" class="primary-btn" type="button">Apply Changes</button>
+            <button id="resetDemoBtn" class="secondary-btn dark-btn" type="button">Reset</button>
+          </div>
+        </div>
+
+        <div class="demo-preview-card" id="demoCard">
+          <div class="preview-top-line"></div>
+          <h3 id="demoCardTitle">My Styled Card</h3>
+          <p id="demoText">
+            This preview updates because JavaScript listens for events and changes the page dynamically.
+          </p>
+
+          <div class="preview-badges">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final action section -->
+    <section class="quiz-callout fancy-callout">
+      <div>
+        <h2>Ready to test yourself?</h2>
+        <p>
+          Move on to the quiz and check your understanding of HTML, CSS, and JavaScript.
+        </p>
+      </div>
+      <a href="quiz.html" class="primary-btn">Go to Quiz</a>
+    </section>
+  </main>
+
+  <!-- ======================================================
+       FOOTER
+       ====================================================== -->
+  <footer class="site-footer">
+    <p>&copy; 2026 Web Foundations Tutor</p>
+  </footer>
+
+  <!-- ======================================================
+       FLOATING SHORTCUT BUTTONS
+       These stay fixed on screen while scrolling.
+       JavaScript highlights the active one.
+       ====================================================== -->
+  <div class="floating-actions">
+    <a href="#overview" class="floating-link overview-link" data-target="overview">Overview</a>
+    <a href="#html-section" class="floating-link html-link" data-target="html-section">HTML</a>
+    <a href="#css-section" class="floating-link css-link" data-target="css-section">CSS</a>
+    <a href="#js-section" class="floating-link js-link" data-target="js-section">JavaScript</a>
+    <a href="#interactive-lab" class="floating-link demo-link" data-target="interactive-lab">Demo</a>
+    <a href="#top" class="floating-link top-link">Top</a>
+  </div>
+
+  <!-- External JavaScript file -->
+  <script src="js/tutorial.js"></script>
+</body>
+</html>

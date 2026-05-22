@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ======================================================
+       BASIC PAGE SETTINGS
+       ====================================================== -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Foundations Tutor | AI Reflection</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Scroll progress bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ======================================================
+       HEADER / HERO
+       ====================================================== -->
+  <header class="site-header reflection-header" id="top">
+    <nav class="navbar">
+      <div class="logo-wrap">
+        <div class="logo-icon">W</div>
+        <div class="logo-text">
+          <span class="logo-title">Web Foundations Tutor</span>
+          <span class="logo-subtitle">CITS5505 AI Reflection Page</span>
+        </div>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="tutorial.html">Tutorial</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="reflection.html" class="active">AI Reflection</a></li>
+        <li><a href="cv.html">CV</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero reflection-hero">
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <div class="hero-badges">
+          <span class="badge html-badge">Reflective</span>
+          <span class="badge css-badge">Critical</span>
+          <span class="badge js-badge">Ethical</span>
+        </div>
+
+        <h1>How I used AI in this project</h1>
+
+        <p class="hero-text">
+          This page explains how AI tools supported my work, what they helped me produce,
+          what I changed manually, what limitations I noticed, and how I critically evaluated
+          reliability, risks, and ethics while developing the project.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#reflection-overview" class="primary-btn">Start Reading</a>
+          <a href="#prompt-log" class="secondary-btn">View Prompt Examples</a>
+        </div>
+      </div>
+
+      <div class="hero-side-card glass-card">
+        <h3>What this reflection covers</h3>
+        <ul>
+          <li>How AI supported planning, coding, debugging, and polishing</li>
+          <li>Example prompts and summaries of AI-generated output</li>
+          <li>Corrections and changes I made myself</li>
+          <li>Limitations, reliability concerns, and ethical risks</li>
+        </ul>
+
+        <p class="hero-mini-note">
+          This reflection does not just describe AI use. It evaluates its usefulness and its risks.
+        </p>
+      </div>
+    </section>
+  </header>
+
+  <!-- ======================================================
+       MAIN CONTENT
+       ====================================================== -->
+  <main id="main-content">
+    <!-- ======================================================
+         OVERVIEW SECTION
+         ====================================================== -->
+    <section id="reflection-overview" class="content-section track-section">
+      <div class="section-heading">
+        <span class="section-tag">Overview</span>
+        <h2>Why this reflection matters</h2>
+      </div>
+
+      <p>
+        AI tools were helpful during this project because they supported both the technical and
+        explanatory sides of development. They helped me generate draft code, improve layout ideas,
+        add comments, expand explanations, and fix some implementation issues more quickly than I
+        could have done alone as a beginner. However, using AI did not remove the need for my own
+        understanding. In several cases, the generated output still needed testing, editing, and
+        correction before it became suitable for the assignment.
+      </p>
+
+      <p>
+        The most important lesson I learned is that AI is useful as a support tool, not as a full
+        replacement for careful thinking. Some responses were helpful immediately, while others were
+        incomplete, too generic, or introduced mistakes when copied into the project. Because of this,
+        I had to actively evaluate the output instead of assuming it was always correct.
+      </p>
+
+      <p>
+        In this project, AI was most helpful when I already knew the goal I wanted to achieve.
+        For example, it was useful when I asked for a styled tutorial page, a dynamically loaded quiz,
+        better comments, or more detailed explanations. It was less reliable when the task required
+        exact alignment with the assignment brief or when copy-paste errors caused JavaScript to break.
+        This meant I had to review both the code and the content carefully after every major change.
+      </p>
+
+      <div class="topic-grid">
+        <article class="topic-card reflection-topic-card">
+          <div class="topic-icon">🧭</div>
+          <h3>Planning</h3>
+          <p>AI helped break the project into smaller tasks and identify what each page needed to include.</p>
+        </article>
+
+        <article class="topic-card reflection-topic-card">
+          <div class="topic-icon">💻</div>
+          <h3>Development</h3>
+          <p>AI produced draft HTML, CSS, and JavaScript that I tested, edited, and integrated into my project.</p>
+        </article>
+
+        <article class="topic-card reflection-topic-card">
+          <div class="topic-icon">🛠</div>
+          <h3>Debugging</h3>
+          <p>AI helped identify structural issues, missing links, broken scripts, and places where my code needed correction.</p>
+        </article>
+
+        <article class="topic-card reflection-topic-card">
+          <div class="topic-icon">🧠</div>
+          <h3>Reflection</h3>
+          <p>I used AI support, but I also had to judge reliability, rewrite unclear parts, and verify that the final result matched the brief.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         PROCESS / STAGE EXPLORER
+         Interactive section that shows different stages of AI use.
+         ====================================================== -->
+    <section id="ai-process" class="content-section track-section">
+      <div class="section-heading">
+        <span class="section-tag css-tag">Process</span>
+        <h2>How AI supported different stages of the project</h2>
+      </div>
+
+      <p>
+        I did not use AI in just one way. I used it differently at different stages of the project.
+        Sometimes I used it for structure, sometimes for styling ideas, sometimes for code comments,
+        and sometimes for debugging. The stage viewer below shows how my use of AI changed during the project.
+      </p>
+
+      <div class="stage-layout">
+        <div class="stage-buttons">
+          <button class="stage-btn active" data-stage="planning" type="button">1. Planning the project</button>
+          <button class="stage-btn" data-stage="tutorial" type="button">2. Building the tutorial page</button>
+          <button class="stage-btn" data-stage="quiz" type="button">3. Building the quiz page</button>
+          <button class="stage-btn" data-stage="refinement" type="button">4. Refining and preparing for demonstration</button>
+        </div>
+
+        <div class="stage-display">
+          <h3 id="stageTitle">Planning the project</h3>
+          <p id="stageText">
+            At the beginning, AI helped me understand the assignment structure and divide the project into smaller parts.
+          </p>
+
+          <div class="stage-points" id="stagePoints"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         PROMPT LOG
+         Interactive prompt viewer.
+         ====================================================== -->
+    <section id="prompt-log" class="content-section track-section">
+      <div class="section-heading">
+        <span class="section-tag html-tag">Prompt Log</span>
+        <h2>Example prompts, outputs, and my changes</h2>
+      </div>
+
+      <p>
+        The assignment requires example prompts, a summary of what the AI produced, and the changes
+        I made. The viewer below shows several representative prompts from my development process.
+        These examples demonstrate that AI responses were not submitted blindly. They were revised,
+        extended, or corrected before becoming part of the final project.
+      </p>
+
+      <div class="prompt-layout">
+        <div class="prompt-tabs">
+          <button class="prompt-tab active" data-prompt="layout" type="button">Tutorial Layout</button>
+          <button class="prompt-tab" data-prompt="polish" type="button">Visual Improvement</button>
+          <button class="prompt-tab" data-prompt="comments" type="button">Commenting Code</button>
+          <button class="prompt-tab" data-prompt="quizlogic" type="button">Quiz Logic</button>
+        </div>
+
+        <div class="prompt-panel">
+          <h3 id="promptTitle">Prompt: tutorial layout and page structure</h3>
+
+          <div class="prompt-block">
+            <h4>Example prompt</h4>
+            <pre class="reflection-code"><code id="promptText"></code></pre>
+          </div>
+
+          <div class="prompt-block">
+            <h4>What the AI produced</h4>
+            <p id="promptOutput"></p>
+          </div>
+
+          <div class="prompt-block">
+            <h4>What I changed myself</h4>
+            <p id="promptChanges"></p>
+          </div>
+
+          <div class="prompt-block">
+            <h4>What limitation I noticed</h4>
+            <p id="promptLimit"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         CORRECTIONS AND LIMITATIONS
+         ====================================================== -->
+    <section id="limitations-section" class="content-section">
+      <div class="section-heading">
+        <span class="section-tag js-tag">Corrections and Limitations</span>
+        <h2>What I had to fix or improve manually</h2>
+      </div>
+
+      <p>
+        Although AI generated useful starting points, the output still required manual checking.
+        In several cases, I had to fix issues myself. These corrections were important because they
+        show that I did not simply accept the AI output without understanding it. They also show how
+        I detected subtle problems by testing the pages in the browser, comparing them with the rubric,
+        and checking whether the generated solution really matched the assignment requirements.
+      </p>
+
+      <div class="correction-grid">
+        <article class="correction-card">
+          <h3>Broken JavaScript after copy-paste</h3>
+          <p>
+            In one draft, JavaScript code was inserted incorrectly and part of the script appeared as plain
+            text on the page instead of running. I detected the problem by opening the page in the browser,
+            noticing that the interactive behaviour had stopped, and checking the script placement. I then
+            restored the JavaScript file and confirmed that the script tag was loading the corrected file.
+          </p>
+        </article>
+
+        <article class="correction-card">
+          <h3>Missing features after code rewrites</h3>
+          <p>
+            During some rewrites, useful features such as learning resource links disappeared even though the
+            page still looked visually complete. This was a subtle problem because the result looked polished at
+            first glance. I detected it by comparing the updated page with the earlier working version and the
+            rubric requirements, then restored the missing features manually.
+          </p>
+        </article>
+
+        <article class="correction-card">
+          <h3>Explanations that were too short</h3>
+          <p>
+            Some AI-generated explanations sounded smooth and correct, but they were too descriptive and did not
+            go deep enough for an educational tutorial page. I detected this by reading the rubric carefully and
+            noticing that the page needed to explain why best practices matter, not just define terms. I then expanded
+            the explanations to make the tutorial more useful for learning.
+          </p>
+        </article>
+
+        <article class="correction-card">
+          <h3>Need for alignment with the brief</h3>
+          <p>
+            AI could generate impressive features, but I still had to check whether those features directly
+            matched the assignment requirements. This was especially important for the quiz, reflection, and
+            demonstration expectations.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         RELIABILITY, RISKS, AND ETHICS
+         ====================================================== -->
+    <section id="ethics-section" class="content-section track-section">
+      <div class="section-heading">
+        <span class="section-tag demo-tag">Critical Evaluation</span>
+        <h2>Reliability, risks, and ethical considerations</h2>
+      </div>
+
+      <p>
+        AI-generated code can look convincing even when it contains problems. Because of that, I could not
+        treat the output as automatically trustworthy. I needed to test the code, compare it with the project
+        brief, and confirm that it actually worked in the browser. This was especially important for dynamic
+        JavaScript features such as loading JSON, handling events, and showing result feedback. One subtle example
+        was when a generated version of the quiz validation blocked submission but did not clearly identify which
+        questions were unanswered. I detected that gap by comparing the page behaviour against the rubric and then
+        improved the validation so unanswered questions were visibly highlighted.
+      </p>
+
+      <p>
+        One reliability risk is that AI may produce code that is technically possible but not appropriate for
+        the assignment. For example, it might add unnecessary complexity, remove an earlier feature during a rewrite,
+        or generate a solution that does not follow the required workflow. Another risk is that AI can produce
+        explanations that sound clear but are still too shallow for an assessment page that is supposed to teach users.
+      </p>
+
+      <p>
+        There are also ethical considerations. Using AI in coding can save time, but it can also create the false
+        impression that the student understands more than they actually do if they submit code they cannot explain.
+        To avoid that problem, I focused on asking for comments, reading the logic, testing the outputs, and making
+        sure I could explain the code in a live demonstration. I also understand that AI use should be acknowledged
+        honestly in the reflection and references.
+      </p>
+
+      <div class="risk-grid">
+        <article class="risk-card">
+          <h3>Reliability Risk</h3>
+          <p>
+            AI output may look correct but still contain syntax errors, missing features, or poor alignment with
+            the assignment brief.
+          </p>
+        </article>
+
+        <article class="risk-card">
+          <h3>Learning Risk</h3>
+          <p>
+            Relying on generated code without understanding it would make the live demonstration difficult and reduce
+            real learning.
+          </p>
+        </article>
+
+        <article class="risk-card">
+          <h3>Ethical Risk</h3>
+          <p>
+            Submitting AI-generated code without acknowledgement or understanding would be academically irresponsible.
+          </p>
+        </article>
+
+        <article class="risk-card">
+          <h3>How I Responded</h3>
+          <p>
+            I reviewed outputs, tested pages in the browser, expanded weak explanations, restored missing features,
+            and made sure I could explain the final code myself.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         WHAT I LEARNED
+         ====================================================== -->
+    <section class="content-section">
+      <div class="section-heading">
+        <span class="section-tag">Learning Outcome</span>
+        <h2>What I learned from using AI</h2>
+      </div>
+
+      <p>
+        The biggest lesson I learned is that AI is strongest when it is used as a guided assistant rather than as an
+        automatic solution. It can speed up drafting, help generate ideas, and explain concepts in different ways,
+        but it still needs human checking. In this project, the most useful workflow was: describe the goal clearly,
+        examine the response, test it in the browser, then revise it until it matched both the brief and my own understanding.
+      </p>
+
+      <p>
+        I also learned that detailed prompts usually produce better results than vague ones. For example, asking for
+        “more explanation”, “beginner-friendly comments”, “complete code”, or “interactive demonstrations” gave more
+        useful output than simply asking for “a page”. This showed me that the quality of AI assistance depends strongly
+        on the clarity of the instructions I provide.
+      </p>
+
+      <p>
+        Finally, I learned that using AI responsibly still requires effort. The tool can support productivity, but it
+        does not remove the need for testing, debugging, editing, and critical reflection. In that sense, AI was most
+        useful when it worked alongside my own judgement rather than instead of it.
+      </p>
+    </section>
+
+    <!-- ======================================================
+         REFERENCES
+         ====================================================== -->
+    <section id="references-section" class="content-section track-section">
+      <div class="section-heading">
+        <span class="section-tag css-tag">References</span>
+        <h2>Sources used in the project and reflection</h2>
+      </div>
+
+      <p>
+        The references below reflect the main sources used to develop the pages, learn web concepts,
+        and document how AI assistance supported the project. They are included to acknowledge both
+        technical learning resources and AI-supported drafting and revision.
+      </p>
+
+      <div class="reference-list">
+        <article class="reference-card">
+          <h3>AI Assistance</h3>
+          <p>OpenAI. ChatGPT. Used during planning, page drafting, code commenting, debugging support, and revision. All generated output was reviewed, tested, and edited before inclusion.</p>
+        </article>
+
+        <article class="reference-card">
+          <h3>HTML Learning</h3>
+          <p><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics" target="_blank" rel="noopener noreferrer">MDN Web Docs: HTML Basics</a></p>
+        </article>
+
+        <article class="reference-card">
+          <h3>CSS Learning</h3>
+          <p><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/Getting_started" target="_blank" rel="noopener noreferrer">MDN Web Docs: Getting Started with CSS</a></p>
+        </article>
+
+        <article class="reference-card">
+          <h3>JavaScript Learning</h3>
+          <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" target="_blank" rel="noopener noreferrer">MDN Web Docs: JavaScript Guide</a></p>
+        </article>
+
+        <article class="reference-card">
+          <h3>DOM Learning</h3>
+          <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction" target="_blank" rel="noopener noreferrer">MDN Web Docs: Introduction to the DOM</a></p>
+        </article>
+
+        <article class="reference-card">
+          <h3>Validation Tools</h3>
+          <p><a href="https://validator.w3.org/" target="_blank" rel="noopener noreferrer">W3C Markup Validator</a> and
+             <a href="https://jigsaw.w3.org/css-validator/" target="_blank" rel="noopener noreferrer">W3C CSS Validator</a></p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Final callout -->
+    <section class="quiz-callout fancy-callout">
+      <div>
+        <h2>Reflection completed</h2>
+        <p>
+          This page documents how AI supported the project while also recognising the importance of testing,
+          correction, and critical judgement.
+        </p>
+      </div>
+      <a href="cv.html" class="primary-btn">Go to CV Page</a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>&copy; 2026 Web Foundations Tutor</p>
+  </footer>
+
+  <!-- Floating shortcuts -->
+  <div class="floating-actions">
+    <a href="#reflection-overview" class="floating-link overview-link" data-target="reflection-overview">Overview</a>
+    <a href="#ai-process" class="floating-link html-link" data-target="ai-process">Process</a>
+    <a href="#prompt-log" class="floating-link css-link" data-target="prompt-log">Prompts</a>
+    <a href="#ethics-section" class="floating-link demo-link" data-target="ethics-section">Ethics</a>
+    <a href="#references-section" class="floating-link js-link" data-target="references-section">References</a>
+    <a href="#top" class="floating-link top-link">Top</a>
+  </div>
+
+  <script src="js/reflection.js"></script>
+</body>
+</html>

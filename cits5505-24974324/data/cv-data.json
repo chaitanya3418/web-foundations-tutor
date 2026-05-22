@@ -1,0 +1,78 @@
+{
+  "items": [
+    {
+      "category": "technical",
+      "categoryLabel": "Technical Skill",
+      "title": "Python",
+      "description": "Used Python for academic programming, machine learning workflows, data preprocessing, and technical problem solving."
+    },
+    {
+      "category": "technical",
+      "categoryLabel": "Technical Skill",
+      "title": "Java, JavaScript, SQL, and HTML/CSS",
+      "description": "Worked with core programming and web technologies across academic and project-based work, including front-end interaction and structured database tasks."
+    },
+    {
+      "category": "technical",
+      "categoryLabel": "Technical Skill",
+      "title": "Tools and Platforms",
+      "description": "Experience with GitHub, Jupyter Notebook, Visual Studio Code, Microsoft Excel, and Google Sheets for technical development and data work."
+    },
+    {
+      "category": "technical",
+      "categoryLabel": "Technical Skill",
+      "title": "Frameworks",
+      "description": "Worked with Flask and Streamlit to support practical application development and interface-driven workflows."
+    },
+    {
+      "category": "technical",
+      "categoryLabel": "Technical Skill",
+      "title": "Core Areas",
+      "description": "Focused on data analysis, data visualisation, machine learning, predictive modelling, and database fundamentals."
+    },
+
+    {
+      "category": "projects",
+      "categoryLabel": "Project",
+      "title": "Smart Attendance System",
+      "description": "Built a facial-recognition attendance prototype for workplace and school use, aimed at improving attendance tracking, record accuracy, and operational efficiency."
+    },
+    {
+      "category": "projects",
+      "categoryLabel": "Project",
+      "title": "Health Prediction Projects",
+      "description": "Developed machine learning projects for health-related prediction tasks, including heart disease prediction, using Python, data preprocessing, and model development workflows."
+    },
+    {
+      "category": "projects",
+      "categoryLabel": "Project",
+      "title": "Lung Disease Detection Research",
+      "description": "Worked on a deep learning project using CT and X-ray image data for early lung disease detection and contributed to a related publication in IJRASET."
+    },
+    {
+      "category": "projects",
+      "categoryLabel": "Project",
+      "title": "Interactive Multi-Page Web Application",
+      "description": "Built a four-page web application containing a tutorial page, quiz page, AI reflection page, and personalised CV page with dynamic content, interactive logic, and structured presentation."
+    },
+
+    {
+      "category": "career",
+      "categoryLabel": "Career Interest",
+      "title": "Software and Technical Development",
+      "description": "Interested in roles where programming, software development, and structured problem solving can be applied in practical settings."
+    },
+    {
+      "category": "career",
+      "categoryLabel": "Career Interest",
+      "title": "Data and Machine Learning",
+      "description": "Interested in using analytical skills, predictive modelling, and machine learning techniques to solve meaningful problems."
+    },
+    {
+      "category": "career",
+      "categoryLabel": "Career Interest",
+      "title": "Growth Through Practical Work",
+      "description": "Motivated by opportunities that support learning, adaptability, technical improvement, and long-term professional development."
+    }
+  ]
+}
